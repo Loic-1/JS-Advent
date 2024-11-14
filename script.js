@@ -1,13 +1,3 @@
-const adventContainer = document.querySelector("#advent-container");
-
-const box = document.createElement("div");
-
-box.classList.add("box");
-
-box.innerText = "test";
-
-adventContainer.appendChild(box);
-
 function setSize(element) {
     console.log("setSize called");
 
@@ -17,5 +7,20 @@ function setSize(element) {
     console.log("Width = " + element.style.width + "\nHeight = " + element.style.height);
 }
 
+const adventContainer = document.querySelector("#advent-container");
 
-setSize(box);
+const box = document.createElement("div");
+
+box.classList.add("box");
+
+box.innerText = "test";
+
+
+for (let i = 0; i < 10; i++) {
+    const newBox = box.cloneNode(true);
+    
+    setSize(newBox);
+    
+    adventContainer.appendChild(newBox);
+}
+
