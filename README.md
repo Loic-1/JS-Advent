@@ -24,6 +24,7 @@ Le site 👉 🎅[Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/
         temp = children[k]; // temp pointe temporairement l'élément à la position k dans board
         children[k] = children[i]; // remplace lélément à la position k par l'élément à la position i
         board.appendChild(temp); // place l'élément k pointé temporairement à la fin du contenu de board
+      }
     }
     ```
     <br/>
