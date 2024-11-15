@@ -120,7 +120,7 @@ a {
     padding: 25px 50px;
 
     background: rgb(241, 240, 123);
-    background: radial-gradient(circle, rgba(241, 240, 123, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(241, 240, 123, 1) 100%);
+    background: radial-gradient(ellipse, rgba(241, 240, 123, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(241, 240, 123, 1) 100%);
 
     border-radius: 3px;
 
