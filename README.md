@@ -12,7 +12,7 @@ Le site 👉 🎅[Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/
 ## Fonctionnalités
 
 - Affichage des cases du calendrier dans un ordre aléatoire
-  - Utilisation de la fonction shuffleChildren pour mélanger les enfants de #advent-container:
+  - Utilisation de la fonction shuffleChildren() pour mélanger les enfants de #advent-container:
     ```js
     function shuffleChildren(parent) {
     let children = parent.children;
@@ -36,7 +36,7 @@ Le site 👉 🎅[Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/
   [Animation de case](link)
 <br/>
 
-- La taille des cases est randomisée grâce à la fonction setSize:
+- La taille des cases est randomisée grâce à la fonction setSize():
   ```js
     // Détermine la taille(l, L) d'un élément, ayant une taille minimale de minSize et une taille maximale de minSize + addSize
   function setSize(element, minSize, addedSize) {
@@ -47,7 +47,7 @@ Le site 👉 🎅[Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/
   }
   ```
 
-- Le pattern en background des cases est également aléatoire, de par l'utilisation d'un array, patterns[], qui stocke les patterns, et d'uné fonction qui renvoie un index aléatoire:
+- Le pattern en background des cases est également aléatoire, de par l'utilisation d'un array, patterns[], qui stocke les patterns, et d'une fonction randomNumber() qui renvoie un index aléatoire:
 
   ```js
   // Set max en fonction du nombre de patterns
