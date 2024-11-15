@@ -76,6 +76,14 @@ a {
     &:hover {
         cursor: pointer;
     }
+
+    &.clicked {
+        background: black;
+
+        box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
+        -webkit-box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
+        -moz-box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
+    }
 }
 
 .box_christmas {
@@ -102,13 +110,13 @@ a {
     transition: all 0.3s ease-in-out;
 
     z-index: -1;
-}
 
-.popup.open {
-    /* opacity: 1; */
-    transform: scale(1);
-
-    z-index: 999;
+    &.open {
+        /* opacity: 1; */
+        transform: scale(1);
+    
+        z-index: 999;
+    }
 }
 
 .popup_inner {
@@ -132,7 +140,8 @@ a {
     text-align: justify;
 }
 
-.close_popup, .refresh {
+.close_popup,
+.refresh {
     padding: 0.5rem 1.5rem;
 
     font-family: var(--christmas-bold);

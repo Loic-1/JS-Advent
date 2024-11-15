@@ -150,7 +150,8 @@ const popupInnerText = document.getElementById("popup-inner-text");
 boxes.forEach(box => {
     box.addEventListener("click", () => {
         box.innerText = "";
-        box.style.background = "black";
+
+        box.classList.add("clicked");
 
         popupInnerText.innerText = quotes[box.classList[1] - 1]; // bricolage
 
