@@ -26,7 +26,7 @@ Le site 👉 [Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/)
         board.appendChild(temp); // place l'élément k pointé temporairement à la fin du contenu de board
     }
     ```
-    
+    <br/>
 - Les cases sont cliquables et l'ordre importe!
   ```js
   contenu js
