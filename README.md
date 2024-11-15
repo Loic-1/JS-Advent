@@ -12,4 +12,4 @@ Le site 👉 [Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/)
 ## Fonctionnalités
 
 - Affichage des cases du calendrier dans un ordre aléatoire
--   ggg
+  - ggg
