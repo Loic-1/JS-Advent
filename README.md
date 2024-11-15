@@ -40,3 +40,12 @@ Le site 👉 🎅[Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/
 // This is a simple JavaScript function
 function setSize(element, minSize, addedSize) {}
 ```
+
+- Le pattern en background des cases est également aléatoire, de par l'utilisation d'un array, patterns[], qui stocke les patterns, et d'uné fonction qui renvoie un index aléatoire:
+
+  ```js
+  // Set max en fonction du nombre de patterns
+  function randomNumber(max) {
+      return Math.floor(Math.random() * max)
+  }
+  ```
