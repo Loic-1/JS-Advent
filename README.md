@@ -12,7 +12,7 @@ Le site 👉 [Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/)
 ## Fonctionnalités
 
 - Affichage des cases du calendrier dans un ordre aléatoire
-  - Utilisation de la fonction shuffleChildren() pour mélanger les enfants de #advent-container
+  - Utilisation de la fonction shuffleChildren() pour mélanger les enfants de #advent-container:
     ```js
     function shuffleChildren(parent) {
     let children = parent.children;
