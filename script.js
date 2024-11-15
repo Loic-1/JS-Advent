@@ -11,6 +11,21 @@ function randomNumber(max) {
     return Math.floor(Math.random() * max)
 }
 
+// Mélange les enfants de l'élément sélectionné
+function shuffleChildren(parent) {
+    let children = parent.children;
+
+    let i = adventContainer.children.length, k, temp;
+
+    while (--i > 0) { // while (i - 1) > 0
+        k = Math.floor(Math.random() * (i + 1)); // k stocke un nombre aléatoire basé sur i
+        temp = children[k]; // temp pointe temporairement l'élément à la position k dans board
+        children[k] = children[i]; // remplace lélément à la position k par l'élément à la position i
+        adventContainer.appendChild(temp); // place l'élément k pointé temporairement à la fin du contenu de board
+    }
+}
+
+
 // Array contenan tous le spattrens qui serviront de background aux box
 patterns = [
     'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' height=\'100%25\' width=\'100%25\'%3E%3Cdefs%3E%3Cpattern id=\'doodad\' width=\'90\' height=\'90\' viewBox=\'0 0 40 40\' patternUnits=\'userSpaceOnUse\' patternTransform=\'rotate(135)\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'rgba(42, 67, 101,1)\'/%3E%3Cpath d=\'M-10 30h60v2h-60zM-10-10h60v2h-60\' fill=\'rgba(229, 62, 62,1)\'/%3E%3Cpath d=\'M-10 12h60v1h-60zM-10-28h60v1h-60z\' fill=\'rgba(236, 201, 75,1)\'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=\'url(%23doodad)\' height=\'200%25\' width=\'200%25\'/%3E%3C/svg%3E")',
@@ -28,15 +43,21 @@ patterns = [
     'url(\"data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' height=\'100%25\' width=\'100%25\'%3E%3Cdefs%3E%3Cpattern id=\'doodad\' width=\'20\' height=\'20\' viewBox=\'0 0 40 40\' patternUnits=\'userSpaceOnUse\' patternTransform=\'rotate(45)\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'rgba(247, 250, 252,1)\'/%3E%3Cpath d=\'M40 20L34 14L34 6L26 6L20 0L14 6L6 6L6 14L0 20L6 26L6 34L14 34L20 40L26 34L34 34L34 26z\' fill=\'rgba(247, 250, 252,1)\'/%3E%3Cpath d=\'M32 20L34 14L34 6L26 6L20 8L14 6L6 6L6 14L8 20L6 26L6 34L14 34L20 32L26 34L34 34L34 26z\' fill=\'rgba(229, 62, 62,1)\'/%3E%3Cpath d=\'M0 0L6 14v-8h8zM40 0L26 6h8v8zM0 40L6 26v8h8zM40 40L34 26v8h-8z\' fill=\'rgba(247, 250, 252,1)\'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=\'url(%23doodad)\' height=\'200%25\' width=\'200%25\'/%3E%3C/svg%3E\")'
 ]
 
+
+// on trouve lélément avec l'id #advent-container
 const adventContainer = document.querySelector("#advent-container");
 
-const box = document.createElement("div");
-
-box.classList.add("box");
-
+// création d'une div boxContainer
 const boxContainer = document.createElement("div");
 
+// on attribue la classe .box_container à boxContainer
 boxContainer.classList.add("box_container");
+
+// création d'une div box
+const box = document.createElement("div");
+
+// on attribue la classe .box à box
+box.classList.add("box");
 
 
 for (let i = 1; i <= 24; i++) {
@@ -64,9 +85,9 @@ for (let i = 1; i <= 24; i++) {
 
     const newBoxContainer = boxContainer.cloneNode(true);
 
-    const height = parseInt(newBox.style.height, 10);
+    const heightNewBox = parseInt(newBox.style.height, 10);
 
-    newBoxContainer.style.height = height * 1.5 + "px";
+    newBoxContainer.style.height = heightNewBox * 1.5 + "px";
 
     newBoxContainer.appendChild(newBox)
 
@@ -82,8 +103,5 @@ for (let i = 1; i <= 24; i++) {
 }
 
 
-// translateY(-number)
-
-
-
-
+// mélange les cases à chaque chargement de la page
+shuffleChildren(adventContainer);
