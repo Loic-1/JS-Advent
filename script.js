@@ -25,6 +25,10 @@ function shuffleChildren(parent) {
     }
 }
 
+function reset() {
+    window.confirm("Êtes-vous sûrs de vouloir réinitialiser le calendrier?");
+}
+
 
 // Array contenan tous le spattrens qui serviront de background aux box
 patterns = [
@@ -86,7 +90,9 @@ const box = document.createElement("div");
 box.classList.add("box");
 
 
-for (let i = 1; i <= 24; i++) {
+localStorage.clear();
+
+for (let i = 1; i <= 23; i++) {
 
     var newBox = box.cloneNode(true);
 
@@ -131,7 +137,7 @@ for (let i = 1; i <= 24; i++) {
 }
 
 
-//POPUP 
+// gestion du popup
 
 const boxes = document.querySelectorAll(".box");
 
