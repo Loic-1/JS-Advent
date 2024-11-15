@@ -37,7 +37,6 @@ Le site 👉 🎅[Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/
 <br/>
 - La taille des cases est randomisée grâce à la fonction setSize
   ```js
-    // Détermine la taille(l, L) d'un élément, ayant une taille minimale de minSize et une taille maximale de minSize + addSize
   function setSize(element, minSize, addedSize) {
       element.style.width = minSize + addedSize * Math.random().toFixed(1) + "px";
       element.style.height = minSize + addedSize * Math.random().toFixed(1) + "px";
