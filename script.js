@@ -90,6 +90,8 @@ for (let i = 1; i <= 24; i++) {
 
     var newBox = box.cloneNode(true);
 
+    newBox.classList.add(i);
+
     newBox.innerText = i;
 
     //DEBUG
@@ -144,7 +146,7 @@ boxes.forEach(box => {
         box.innerText = "";
         box.style.background = "black";
 
-        popupInnerText.innerText = quotes[randomNumber(quotes.length)];
+        popupInnerText.innerText = quotes[box.classList[1] - 1]; // bricolage
 
         popup.classList.add("open");
     });
