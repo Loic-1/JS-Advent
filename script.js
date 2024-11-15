@@ -43,8 +43,34 @@ patterns = [
     'url(\"data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' height=\'100%25\' width=\'100%25\'%3E%3Cdefs%3E%3Cpattern id=\'doodad\' width=\'20\' height=\'20\' viewBox=\'0 0 40 40\' patternUnits=\'userSpaceOnUse\' patternTransform=\'rotate(45)\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'rgba(247, 250, 252,1)\'/%3E%3Cpath d=\'M40 20L34 14L34 6L26 6L20 0L14 6L6 6L6 14L0 20L6 26L6 34L14 34L20 40L26 34L34 34L34 26z\' fill=\'rgba(247, 250, 252,1)\'/%3E%3Cpath d=\'M32 20L34 14L34 6L26 6L20 8L14 6L6 6L6 14L8 20L6 26L6 34L14 34L20 32L26 34L34 34L34 26z\' fill=\'rgba(229, 62, 62,1)\'/%3E%3Cpath d=\'M0 0L6 14v-8h8zM40 0L26 6h8v8zM0 40L6 26v8h8zM40 40L34 26v8h-8z\' fill=\'rgba(247, 250, 252,1)\'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill=\'url(%23doodad)\' height=\'200%25\' width=\'200%25\'/%3E%3C/svg%3E\")'
 ]
 
+quotes = ["\"Christmas isn't a season. It's a feeling.\"\n— Edna Ferber",
+    "\"The best way to spread Christmas cheer is singing loud for all to hear.\"\n— Elf (movie)",
+    "\"Gifts of time and love are surely the basic ingredients of a truly merry Christmas.\"\n— Peg Bracken",
+    "\"At Christmas, all roads lead home.\"\n— Marjorie Holmes",
+    "\"Peace on earth will come to stay when we live Christmas every day.\"\n— Helen Steiner Rice",
+    "\"Christmas waves a magic wand over this world, and behold, everything is softer and more beautiful.\"\n— Norman Vincent Peale",
+    "\"I will honor Christmas in my heart, and try to keep it all the year.\"\n— Charles Dickens",
+    "\"May you never be too grown up to search the skies on Christmas Eve.\"\n— Anonymous",
+    "\"What is Christmas? It is tenderness for the past, courage for the present, hope for the future.\"\n— Agnes M. Pahro",
+    "\"Christmas is not as much about opening our presents as opening our hearts.\"\n— Janice Maeditere",
+    "\"The joy of brightening other lives becomes for us the magic of the holidays.\"\n— W.C. Jones",
+    "\"Maybe Christmas, he thought, doesn't come from a store. Maybe Christmas… perhaps… means a little bit more!\"\n— Dr. Seuss, How the Grinch Stole Christmas!",
+    "\"Christmas will always be as long as we stand heart to heart and hand in hand.\"\n— Dr. Seuss",
+    "\"Christmas is a stocking stuffed with sugary goodness.\"\n— Mo Rocca",
+    "\"Blessed is the season which engages the whole world in a conspiracy of love.\"\n— Hamilton Wright Mabie",
+    "\"It’s not what’s under the Christmas tree that matters, it’s who’s around it.\"\n— Charlie Brown",
+    "\"Christmas gives us the opportunity to pause and reflect on the important things around us.\"\n— David Cameron",
+    "\"Kindness is like snow. It beautifies everything it covers.\"\n— Kahlil Gibran",
+    "\"T'was the night before Christmas, when all through the house, not a creature was stirring, not even a mouse.\"\n— Clement Clarke Moore",
+    "\"The best of all gifts around any Christmas tree: the presence of a happy family all wrapped up in each other.\"\n— Burton Hillis",
+    "\"Christmas is forever, not for just one day. For loving, sharing, giving, are not to put away.\"\n— Norman Wesley Brooks",
+    "\"To cherish peace and goodwill, to be plenteous in mercy, is to have the real spirit of Christmas.\"\n— Calvin Coolidge",
+    "\"Every time we love, every time we give, it’s Christmas.\"\n— Dale Evans",
+    "\"Christmas is the spirit of giving without a thought of getting. It is happiness because we see joy in people. It is forgetting self and finding time for others.\"\n— Thomas S. Monson"
+]
 
-// on trouve lélément avec l'id #advent-container
+
+// on trouve l'élément avec l'id #advent-container
 const adventContainer = document.querySelector("#advent-container");
 
 // création d'une div boxContainer
@@ -101,6 +127,32 @@ for (let i = 1; i <= 24; i++) {
 
     newBox.style.transform = `translate(0, ${offsetY}%)`;
 }
+
+
+//POPUP 
+
+const boxes = document.querySelectorAll(".box");
+
+const popup = document.getElementById("popup");
+
+const closePopup = document.getElementById("close-popup");
+
+const popupInnerText = document.getElementById("popup-inner-text");
+
+boxes.forEach(box => {
+    box.addEventListener("click", () => {
+        box.innerText = "";
+        box.style.background = "black";
+
+        popupInnerText.innerText = quotes[randomNumber(quotes.length)];
+
+        popup.classList.add("open");
+    });
+});
+
+closePopup.addEventListener("click", () => {
+    popup.classList.remove("open");
+});
 
 
 // mélange les cases à chaque chargement de la page
