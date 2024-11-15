@@ -48,4 +48,7 @@ function setSize(element, minSize, addedSize) {}
   function randomNumber(max) {
       return Math.floor(Math.random() * max)
   }
+
+
+  newBox.style.background = patterns[randomNumber(patterns.length)]
   ```
