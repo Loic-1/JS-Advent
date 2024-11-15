@@ -32,5 +32,5 @@ Le site 👉 🎅[Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/
   contenu js
   ```
   <br/>
-- Il y a une animation au clic!
+- Il y a une animation au clic! <br/>
   [Animation de case](link)
