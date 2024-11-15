@@ -1,5 +1,5 @@
 # Christmas Advent Calendar
 
-[Le site](https://loic-1.github.io/JS-Advent.github.io/)
+Le site 👉 [Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/)
 
 ## Captures d'écran
