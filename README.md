@@ -35,7 +35,7 @@ Le site 👉 🎅[Merry Christmas](https://loic-1.github.io/JS-Advent.github.io/
 - Il y a une animation au clic! <br/>
   [Animation de case](link)
 <br/>
-- La taille des cases est randomisée grâce à la fonction setSize
+- La taille des cases est randomisée grâce à la fonction setSize:
   ```js
   function setSize(element, minSize, addedSize) { }
   ```
