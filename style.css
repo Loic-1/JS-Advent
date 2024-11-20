@@ -144,7 +144,7 @@ a {
 .refresh {
     padding: 0.5rem 1.5rem;
 
-    /* border: none; */
+    border: none;
 
     background-color: rgba(0, 0, 0, 0);
 
