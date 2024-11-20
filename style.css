@@ -146,6 +146,8 @@ a {
 
     border: none;
 
+    background-color: rgba(0, 0, 0, 0);
+
     font-family: var(--christmas-bold);
     font-size: large;
 
