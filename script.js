@@ -92,7 +92,7 @@ box.classList.add("box");
 
 localStorage.clear();
 
-for (let i = 1; i <= 23; i++) {
+for (let i = 1; i <= 24; i++) {
 
     var newBox = box.cloneNode(true);
 
