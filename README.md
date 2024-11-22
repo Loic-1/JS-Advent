@@ -30,7 +30,7 @@ Le site 👉 🎅[Merry Christmas](https://js-advent-cqta.vercel.app/)📅
     <br/>
 - Les cases sont cliquables et l'ordre importe!
   ```js
-  contenu js
+  code js
   ```
   <br/>
 - Il y a une animation au clic! <br/>
