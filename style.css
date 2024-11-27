@@ -60,7 +60,7 @@ header, footer {
 .box_container {
     margin: 0px 15px;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .box {
