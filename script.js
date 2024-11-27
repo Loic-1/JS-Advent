@@ -144,7 +144,7 @@ for (let i = 1; i <= 24; i++) {
   adventContainer.appendChild(newBoxContainer);
 
   // DEBUG
-  offsetX = randomNumber(50);
+  offsetX = randomNumber(30);
   offsetY = randomNumber(50);
 
   console.log(
