@@ -9,6 +9,7 @@ Le site 👉 🎅[Merry Christmas](https://js-advent-cqta.vercel.app/)📅
 
 ## Captures d'écran
 
+
 ## Fonctionnalités
 
 - Affichage des cases du calendrier dans un ordre aléatoire
@@ -51,7 +52,7 @@ Le site 👉 🎅[Merry Christmas](https://js-advent-cqta.vercel.app/)📅
 - Le pattern en background des cases est également aléatoire, de par l'utilisation d'un array, patterns[], qui stocke les patterns, et d'une fonction randomNumber() qui renvoie un index aléatoire:
 
   ```js
-  // Set max en fonction du nombre de patterns
+  // Renvoie un nombre aléatoire compris entre 0 et max
   function randomNumber(max) {
       return Math.floor(Math.random() * max)
   }
