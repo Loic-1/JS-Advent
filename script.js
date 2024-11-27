@@ -6,7 +6,7 @@ function setSize(element, minSize, addedSize) {
     console.log(`Width = ${element.style.width} \nHeight = ${element.style.height}`);
 }
 
-// Set max en fonction du nombre de patterns
+// Renvoie un nombre aléatoire compris entre 0 et max
 function randomNumber(max) {
     return Math.floor(Math.random() * max)
 }
@@ -120,20 +120,23 @@ for (let i = 1; i <= 24; i++) {
     const newBoxContainer = boxContainer.cloneNode(true);
 
     const heightNewBox = parseInt(newBox.style.height, 10);
+    const widthtNewBox = parseInt(newBox.style.width, 10);
 
     newBoxContainer.style.height = heightNewBox * 1.5 + "px";
+    newBoxContainer.style.width = widthtNewBox * 1.5 + "px";
 
     newBoxContainer.appendChild(newBox)
 
     adventContainer.appendChild(newBoxContainer);
 
     // DEBUG
-    offsetY = randomNumber(30);
+    offsetX = randomNumber(50)
+    offsetY = randomNumber(50);
 
-    console.log(`Box ${i} offset in Y by ${offsetY}%`)
+    console.log(`Box ${i} offset in X by ${offsetX}%\nBox ${i} offset in Y by ${offsetY}%`)
     // DEBUG
 
-    newBox.style.transform = `translate(0, ${offsetY}%)`;
+    newBox.style.transform = `translate(${offsetX}%, ${offsetY}%)`;
 }
 
 
