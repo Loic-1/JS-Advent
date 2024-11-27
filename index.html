@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="An advent calendar, with the possibility to shuffle the dates and click them in order, the box sizes are random and dynamic with JS.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An advent calendar, with the possibility to shuffle the dates and click them in order, the box sizes are random and dynamic with JS."
+    />
     <title>Advent Calendar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/icon.svg">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.svg" />
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
+      <header>
         <h1>Christmas<!--  :3 --></h1>
+      </header>
 
-        <div id="advent-container"></div>
+      <div id="advent-container"></div>
 
-        <div id="popup" class="popup">
-            <div class="popup_inner">
-                <p id="popup-inner-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quas quaerat perferendis temporibus.
-                    Ea molestiae, itaque, at aliquam est rem quidem rerum ipsa eveniet dolores consequuntur autem velit
-                    repudiandae! Maiores!</p>
-                    <button class="close_popup" id="close-popup">Close</button>
-            </div>
+      <div id="popup" class="popup">
+        <div class="popup_inner">
+          <p id="popup-inner-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quas
+            quaerat perferendis temporibus. Ea molestiae, itaque, at aliquam est
+            rem quidem rerum ipsa eveniet dolores consequuntur autem velit
+            repudiandae! Maiores!
+          </p>
+          <button class="close_popup" id="close-popup">Close</button>
         </div>
+      </div>
 
-        <button class="refresh" id="refresh" onclick="reset()">Reset</button>
+      <button class="refresh" id="refresh" onclick="reset()">Reset</button>
 
-        <a href="https://doodad.dev/pattern-generator/" target="_blank">Pattern Generator</a>
+      <footer>
+        <a href="https://doodad.dev/pattern-generator/" target="_blank"
+          >Pattern Generator</a
+        >
+      </footer>
     </div>
-</body>
-<script src="script.js"></script>
-
+  </body>
+  <script src="script.js"></script>
 </html>

@@ -41,6 +41,12 @@ a {
     font-family: var(--christmas-bold);
 }
 
+header, footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
 #advent-container {
     display: flex;
     justify-content: center;
