@@ -1,165 +1,173 @@
 @font-face {
-    font-family: "Christmas-Regular";
-    src: url(fonts/Mountains_of_Christmas/MountainsofChristmas-Regular.ttf) format("truetype");
+  font-family: "Christmas-Regular";
+  src: url(fonts/Mountains_of_Christmas/MountainsofChristmas-Regular.ttf)
+    format("truetype");
 }
 
 @font-face {
-    font-family: "Christmas-Bold";
-    src: url(fonts/Mountains_of_Christmas/MountainsofChristmas-Bold.ttf) format("truetype");
+  font-family: "Christmas-Bold";
+  src: url(fonts/Mountains_of_Christmas/MountainsofChristmas-Bold.ttf)
+    format("truetype");
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {
-    color: var(--primary-font-color);
+  color: var(--primary-font-color);
 
-    font-family: var(--christmas-regular);
+  font-family: var(--christmas-regular);
 }
 
 :root {
-    --christmas-bold: "Christmas-Bold";
-    --christmas-regular: "Christmas-Regular";
-    --primary-font-color: white;
-    --secondary-font-color: black;
+  --christmas-bold: "Christmas-Bold";
+  --christmas-regular: "Christmas-Regular";
+  --primary-font-color: white;
+  --secondary-font-color: black;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
 
-    background-color: rgb(4, 94, 4);
+  background-color: rgb(4, 94, 4);
 
-    color: var(--primary-font-color);
-    font-family: var(--christmas-bold);
+  color: var(--primary-font-color);
+  font-family: var(--christmas-bold);
 }
 
-header, footer {
-    width: 100%;
-    text-align: center;
-    padding: 1rem 2rem;
+header,
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 2rem;
 }
 
 #advent-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    width: 100%;
+  width: 100%;
 
-    padding: 5% 15%;
+  padding: 5% 15%;
 }
 
 .box_container {
-    margin: 10px 10px;
+  margin: 10px 10px;
 
-    border: 1px solid red;
+  border: 1px solid red;
 }
 
 .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    /* box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); */
 
-    border-radius: 2px;
+  border-radius: 2px;
 
-    transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
 
-    color: var(--secondary-font-color);
-    font-size: 50px;
-    font-family: var(--christmas-bold);
+  color: var(--secondary-font-color);
+  font-size: 50px;
+  font-family: var(--christmas-bold);
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 
-    &.clicked {
-        background: black;
-        /* background-color: black; */
+  &.clicked {
+    background: black;
+    /* background-color: black; */
 
-        /* box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
+    /* box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
         -webkit-box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
         -moz-box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset; */
-    }
+  }
 }
 
 .box_christmas {
-    box-shadow: 1px 1px 5px 10px rgba(255, 215, 0, 0.75);
-    -webkit-box-shadow: 1px 1px 5px 10px rgba(255, 215, 0, 0.75);
-    -moz-box-shadow: 1px 1px 5px 10px rgba(255, 215, 0, 0.75);
+  box-shadow: 1px 1px 5px 10px rgba(255, 215, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 5px 10px rgba(255, 215, 0, 0.75);
+  -moz-box-shadow: 1px 1px 5px 10px rgba(255, 215, 0, 0.75);
 }
 
 .popup {
-    position: fixed;
+  position: fixed;
 
-    /* opacity: 0; */
-    transform: scale(0.01);
+  /* opacity: 0; */
+  transform: scale(0.01);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
-    z-index: -1;
+  z-index: -1;
 
-    &.open {
-        /* opacity: 1; */
-        transform: scale(1);
-    
-        z-index: 999;
-    }
+  &.open {
+    /* opacity: 1; */
+    transform: scale(1);
+
+    z-index: 999;
+  }
 }
 
 .popup_inner {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 
-    height: fit-content;
-    width: fit-content;
-    max-width: 50%;
-    padding: 25px 50px;
+  height: fit-content;
+  width: fit-content;
+  max-width: 50%;
+  padding: 25px 50px;
 
-    background: rgb(241, 240, 123);
-    background: radial-gradient(ellipse, rgba(241, 240, 123, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(241, 240, 123, 1) 100%);
+  background: rgb(241, 240, 123);
+  background: radial-gradient(
+    ellipse,
+    rgba(241, 240, 123, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 240, 123, 1) 100%
+  );
 
-    border-radius: 3px;
+  border-radius: 3px;
 
-    font-size: large;
-    color: var(--secondary-font-color);
-    text-align: justify;
+  font-size: large;
+  color: var(--secondary-font-color);
+  text-align: justify;
 }
 
 .close_popup,
 .refresh {
-    padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 
-    border: none;
+  border: none;
 
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 
-    font-family: var(--christmas-bold);
-    font-size: large;
+  font-family: var(--christmas-bold);
+  font-size: large;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
