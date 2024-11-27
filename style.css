@@ -65,7 +65,7 @@ a {
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); */
 
-    border-radius: 1%;
+    border-radius: 2px;
 
     transition: ease-in-out 0.4s;
 
@@ -79,10 +79,11 @@ a {
 
     &.clicked {
         background: black;
+        /* background-color: black; */
 
-        box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
+        /* box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
         -webkit-box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
-        -moz-box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset;
+        -moz-box-shadow: 1px 14px 0px 42px rgba(0, 0, 0, 0.75) inset; */
     }
 }
 

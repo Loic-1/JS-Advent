@@ -153,6 +153,8 @@ boxes.forEach(box => {
 
         box.classList.add("clicked");
 
+        // box.style.background = "black";
+
         popupInnerText.innerText = quotes[box.classList[1] - 1]; // bricolage
 
         popup.classList.add("open");
