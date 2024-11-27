@@ -9,7 +9,6 @@ Le site 👉 🎅[Merry Christmas](https://js-advent-cqta.vercel.app/)📅
 
 ## Captures d'écran
 
-[test](FlexCards1.PNG)
 
 ## Fonctionnalités
 
