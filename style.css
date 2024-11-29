@@ -37,6 +37,8 @@ a {
 
   /* background-color: rgb(4, 94, 4); */
 
+  
+
   background-image: url(images/R.jfif);
   background-attachment: fixed;
   background-position: center;
@@ -52,6 +54,8 @@ footer {
   width: 100%;
   text-align: center;
   padding: 1rem 2rem;
+
+  color: var(--secondary-font-color);
 }
 
 #advent-container {
@@ -67,7 +71,7 @@ footer {
 .box_container {
   margin: 10px 10px;
 
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .box {
@@ -170,10 +174,4 @@ footer {
   &:hover {
     cursor: pointer;
   }
-
-  &.refresh {
-    color: var(--primary-font-color);
-  }
-
-  
 }

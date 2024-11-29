@@ -152,7 +152,7 @@ for (let i = 1; i <= 24; i++) {
   );
   // DEBUG
 
-  newBox.style.transform = `translate(${offsetX}%, ${offsetY}%)`;
+  newBox.style.transform = `translate(30%, ${offsetY}%)`;
 }
 
 // gestion du popup
