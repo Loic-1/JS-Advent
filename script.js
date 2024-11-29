@@ -126,8 +126,7 @@ for (let i = 1; i <= 24; i++) {
 
   if (i == 24) {
     newBox.classList.add("box_christmas");
-    setSize(newBox, 150, 0);
-    // setSize(newBox, 300, 0);
+    setSize(newBox, 250, 0);
   } else {
     setSize(newBox, 150, 100);
   }
@@ -153,11 +152,7 @@ for (let i = 1; i <= 24; i++) {
   );
   // DEBUG
 
-  if (i != 24) {
-    newBox.style.transform = `translate(${offsetX}%, ${offsetY}%)`;
-  } else {
-    newBox.style.transform = `translate(25%, ${offsetY}%)`;
-  }
+  newBox.style.transform = `translate(${offsetX}%, ${offsetY}%)`;
 }
 
 // gestion du popup
