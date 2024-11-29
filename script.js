@@ -194,5 +194,20 @@ closePopup.addEventListener("click", () => {
   pauseAudio(audioTest);
 });
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("pop");
+    } else {
+      entry.target.classList.remove("pop");
+    }
+  });
+});
+
+boxes.forEach(box => {
+  observer.observe(box);
+})
+
+
 // mélange les cases à chaque chargement de la page
 shuffleChildren(adventContainer);
