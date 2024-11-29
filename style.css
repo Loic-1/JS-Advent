@@ -174,10 +174,6 @@ footer {
 
 
 @media screen and (max-width: 480px) {
-
-  .wrapper {
-
-  }
   
   #advent-container {
     flex-wrap: nowrap;
@@ -185,10 +181,6 @@ footer {
     align-items: center;
 
     padding: 5% 0%;
-  }
-
-  .box {
-    margin-right: 20px;
   }
   
   .box_container {
