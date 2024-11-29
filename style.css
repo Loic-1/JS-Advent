@@ -14,11 +14,6 @@
   box-sizing: border-box;
 }
 
-a {
-  color: var(--primary-font-color);
-
-  font-family: var(--christmas-regular);
-}
 
 :root {
   --christmas-bold: "Christmas-Bold";
@@ -49,12 +44,18 @@ header,
 footer {
   width: 100%;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
 
   color: var(--secondary-font-color);
 }
 
-header {}
+header {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
 
 #advent-container {
   display: flex;
@@ -176,6 +177,18 @@ header {}
   &:hover {
     cursor: pointer;
   }
+}
+
+footer {
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+
+footer a {
+  color: var(--secondary-font-color);
 }
 
 @media screen and (max-width: 480px) {
