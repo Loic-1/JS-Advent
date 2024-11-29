@@ -194,15 +194,20 @@ closePopup.addEventListener("click", () => {
   pauseAudio(audioTest);
 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("pop");
-    } else {
-      entry.target.classList.remove("pop");
-    }
-  });
-});
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("pop");
+      } else {
+        entry.target.classList.remove("pop");
+      }
+    })
+  },
+  {
+    threshold: 1,
+  }
+)
 
 boxes.forEach(box => {
   observer.observe(box);
