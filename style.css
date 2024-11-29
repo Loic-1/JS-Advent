@@ -35,11 +35,7 @@ a {
   min-height: 100vh;
   width: 100%;
 
-  /* background-color: rgb(4, 94, 4); */
-
-  
-
-  /* background-image: url(images/R.jfif); */
+  background-image: url(images/R.jfif);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,7 +67,7 @@ footer {
 .box_container {
   margin: 10px 10px;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .box {
@@ -179,7 +175,19 @@ footer {
 
 @media screen and (max-width: 480px) {
 
+  .wrapper {
+    
+  }
+  
   #advent-container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
     padding: 5% 0%;
+  }
+
+  .box {
+    margin-right: 20px;
   }
 }
