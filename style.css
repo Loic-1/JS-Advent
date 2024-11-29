@@ -192,8 +192,13 @@ header {}
     width: 200px;
   }
 
-  .pop {
+  .box {
+    opacity: 0;
+    transition: all 0.5s;
 
-    font-size: 100px;
+    &.pop {
+      opacity: 1;
+      font-size: 75px;
+    }
   }
 }
