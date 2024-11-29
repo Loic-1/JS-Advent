@@ -166,6 +166,7 @@ const closePopup = document.getElementById("close-popup");
 const popupInnerText = document.getElementById("popup-inner-text");
 
 boxes.forEach((box) => {
+
   box.addEventListener("touchstart", () => {
     box.classList.add("hover");
   })
@@ -174,17 +175,17 @@ boxes.forEach((box) => {
     box.classList.remove("hover");
   })
 
-  // box.addEventListener("click", () => {
-  //   box.innerText = "";
+  box.addEventListener("click", () => {
+    box.innerText = "";
 
-  //   box.classList.add("clicked");
+    box.classList.add("clicked");
 
-  //   playAudio(audioTest);
+    playAudio(audioTest);
 
-  //   popupInnerText.innerText = quotes[box.classList[1] - 1]; // bricolage
+    popupInnerText.innerText = quotes[box.classList[1] - 1]; // bricolage
 
-  //   popup.classList.add("open");
-  // });
+    popup.classList.add("open");
+  });
 });
 
 closePopup.addEventListener("click", () => {

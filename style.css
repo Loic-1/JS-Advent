@@ -54,6 +54,10 @@ footer {
   color: var(--secondary-font-color);
 }
 
+header {
+  
+}
+
 #advent-container {
   display: flex;
   justify-content: center;
@@ -160,8 +164,11 @@ footer {
   text-align: justify;
 }
 
-.close_popup,
-.refresh {
+.close_popup
+
+/*,
+.refresh*/
+  {
   padding: 0.5rem 1.5rem;
 
   border: none;
@@ -178,7 +185,7 @@ footer {
 
 
 @media screen and (max-width: 480px) {
-  
+
   #advent-container {
     flex-wrap: nowrap;
     flex-direction: column;
@@ -186,7 +193,7 @@ footer {
 
     padding: 5% 0%;
   }
-  
+
   .box_container {
     width: 200px;
   }
