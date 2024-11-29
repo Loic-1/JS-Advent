@@ -166,17 +166,25 @@ const closePopup = document.getElementById("close-popup");
 const popupInnerText = document.getElementById("popup-inner-text");
 
 boxes.forEach((box) => {
-  box.addEventListener("click", () => {
-    box.innerText = "";
+  box.addEventListener("touchstart", () => {
+    box.classList.add("hover");
+  })
 
-    box.classList.add("clicked");
+  box.addEventListener("touchend", () => {
+    box.classList.remove("hover");
+  })
 
-    playAudio(audioTest);
+  // box.addEventListener("click", () => {
+  //   box.innerText = "";
 
-    popupInnerText.innerText = quotes[box.classList[1] - 1]; // bricolage
+  //   box.classList.add("clicked");
 
-    popup.classList.add("open");
-  });
+  //   playAudio(audioTest);
+
+  //   popupInnerText.innerText = quotes[box.classList[1] - 1]; // bricolage
+
+  //   popup.classList.add("open");
+  // });
 });
 
 closePopup.addEventListener("click", () => {
