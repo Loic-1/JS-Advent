@@ -35,7 +35,7 @@ Le site 👉 🎅[Merry Christmas](https://js-advent-cqta.vercel.app/)📅
   ```
   <br/>
 - Il y a une animation au clic! <br/>
-  ![Animation de case](link)
+  ![clickAnimationGif.gif](assetsReadme/clickAnimationGif.gif)
 <br/>
 
 - La taille des cases est randomisée grâce à la fonction setSize():
