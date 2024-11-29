@@ -1,13 +1,11 @@
 @font-face {
   font-family: "Christmas-Regular";
-  src: url(fonts/Mountains_of_Christmas/MountainsofChristmas-Regular.ttf)
-    format("truetype");
+  src: url(fonts/Mountains_of_Christmas/MountainsofChristmas-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Christmas-Bold";
-  src: url(fonts/Mountains_of_Christmas/MountainsofChristmas-Bold.ttf)
-    format("truetype");
+  src: url(fonts/Mountains_of_Christmas/MountainsofChristmas-Bold.ttf) format("truetype");
 }
 
 * {
@@ -37,7 +35,13 @@ a {
   min-height: 100vh;
   width: 100%;
 
-  background-color: rgb(4, 94, 4);
+  /* background-color: rgb(4, 94, 4); */
+
+  background-image: url(images/R.jfif);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   color: var(--primary-font-color);
   font-family: var(--christmas-bold);
@@ -63,7 +67,7 @@ footer {
 .box_container {
   margin: 10px 10px;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .box {
@@ -71,9 +75,9 @@ footer {
   justify-content: center;
   align-items: center;
 
-  /* box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75); */
+  box-shadow: 2px 2px 42px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 42px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 42px 0px rgba(0, 0, 0, 0.75);
 
   border-radius: 2px;
 
@@ -85,6 +89,7 @@ footer {
 
   &:hover {
     cursor: pointer;
+    font-size: 100px;
   }
 
   &.clicked {
@@ -139,12 +144,10 @@ footer {
   padding: 25px 50px;
 
   background: rgb(241, 240, 123);
-  background: radial-gradient(
-    ellipse,
-    rgba(241, 240, 123, 1) 0%,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(241, 240, 123, 1) 100%
-  );
+  background: radial-gradient(ellipse,
+      rgba(241, 240, 123, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(241, 240, 123, 1) 100%);
 
   border-radius: 3px;
 
@@ -167,4 +170,10 @@ footer {
   &:hover {
     cursor: pointer;
   }
+
+  &.refresh {
+    color: var(--primary-font-color);
+  }
+
+  
 }

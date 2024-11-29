@@ -32,12 +32,12 @@ function shuffleChildren(parent) {
 
 function playAudio(audio) {
   audio.play();
-  alert("play");
+  // alert("play");
 }
 
 function pauseAudio(audio) {
   audio.pause();
-  alert("pause");
+  // alert("pause");
 }
 
 function reset() {
