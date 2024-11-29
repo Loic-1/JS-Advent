@@ -39,7 +39,7 @@ a {
 
   
 
-  background-image: url(images/R.jfif);
+  /* background-image: url(images/R.jfif); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -173,5 +173,13 @@ footer {
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  #advent-container {
+    padding: 5% 0%;
   }
 }
