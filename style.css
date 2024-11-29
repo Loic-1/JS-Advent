@@ -176,7 +176,7 @@ footer {
 @media screen and (max-width: 480px) {
 
   .wrapper {
-    
+
   }
   
   #advent-container {
@@ -189,5 +189,9 @@ footer {
 
   .box {
     margin-right: 20px;
+  }
+  
+  .box_container {
+    width: 200px;
   }
 }

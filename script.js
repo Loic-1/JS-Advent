@@ -126,7 +126,8 @@ for (let i = 1; i <= 24; i++) {
 
   if (i == 24) {
     newBox.classList.add("box_christmas");
-    setSize(newBox, 300, 0);
+    setSize(newBox, 150, 0);
+    // setSize(newBox, 300, 0);
   } else {
     setSize(newBox, 150, 100);
   }
